@@ -1,0 +1,124 @@
+{
+    "name": "Sue Sue",
+    "contact": {
+      "phone": "408-207-3795",
+      "email": "29suesue@gmail.com",
+      "linkedin": "https://linkedin.com/in/sue-sue",
+      "github": "https://github.com/suesuee"
+    },
+    "education": [
+      {
+        "institution": "California Polytechnic State University, San Luis Obispo",
+        "location": "San Luis Obispo, CA",
+        "degree": "Bachelor of Science in Computer Science",
+        "dates": "Sept. 2024 – Jun. 2026"
+      },
+      {
+        "institution": "De Anza College",
+        "location": "Cupertino, CA",
+        "degree": "Associate degrees in Computer Science and Mathematics",
+        "dates": "Sept. 2022 – Jun. 2024"
+      }
+    ],
+    "work_experience": [
+      {
+        "title": "International Center Front Desk Student Assistant",
+        "organization": "Cal Poly, San Luis Obispo",
+        "location": "San Luis Obispo, CA",
+        "dates": "Dec 2024 – Present",
+        "responsibilities": [
+          "Manage data-driven projects supporting study abroad programs",
+          "Create marketing content",
+          "Engage with diverse student populations through in-person, phone, and email interactions"
+        ]
+      },
+      {
+        "title": "Software Developer at Hack4Impact",
+        "organization": "Cal Poly, San Luis Obispo",
+        "location": "San Luis Obispo, CA",
+        "dates": "Oct. 2024 – Present",
+        "responsibilities": [
+          "Collaborate with cross-functional teams to build software solutions for local nonprofits",
+          "Technologies used: JavaScript, TypeScript, React, Next.js, Node.js, MongoDB"
+        ]
+      },
+      {
+        "title": "Teaching and Mentorship Experience",
+        "organizations": [
+          "Stanford University",
+          "De Anza College",
+          "ShareWorld Learning Center"
+        ],
+        "dates": "Jun. 2023 – Present",
+        "responsibilities": [
+          "Taught Stanford’s CS106A (Intro to Python) to students globally in June 2023 and June 2024",
+          "Tutored 80+ students in Advanced C++, Java, Python, and x86 Assembly",
+          "Volunteered to teach Python to high school students"
+        ]
+      },
+      {
+        "title": "Student Assistant at Admissions and Records",
+        "organization": "De Anza College",
+        "location": "Cupertino, CA",
+        "dates": "Jun. 2023 – Aug. 2024",
+        "responsibilities": [
+          "Provided support for admissions and registration processes",
+          "Handled in-person, phone, and email inquiries",
+          "Performed database queries and data entry for PII-related projects"
+        ]
+      }
+    ],
+    "technical_projects": [
+      {
+        "name": "Referral Program for Paso Robles Food Cooperative",
+        "technologies": ["Next.js", "React.js", "Supabase", "Prisma ORM", "Docker"],
+        "description": [
+          "Developed and optimized backend APIs using Next.js, Supabase, and Prisma ORM",
+          "Designed frontend forms with React.js and MUI",
+          "Integrated MySQL and Supabase, automated email notifications, deployed with Docker"
+        ]
+      },
+      {
+        "name": "Roommate Chores Tracker",
+        "technologies": ["Python", "PostgreSQL", "FASTAPI", "SQLAlchemy", "Docker"],
+        "description": [
+          "Built backend API for chore and bill tracking system using FastAPI and SQLAlchemy",
+          "Designed relational DB and CRUD endpoints with Swagger UI docs",
+          "Wrote Python script to simulate 1M users and added indexing for performance",
+          "Used Docker to test under load conditions locally"
+        ]
+      },
+      {
+        "name": "POS System for Grocery Store",
+        "technologies": ["Java", "JavaFX", "MySQL"],
+        "description": [
+          "Created POS system for checkout, sales, and inventory management",
+          "Built user/admin interfaces with JavaFX",
+          "Utilized MySQL for database management and optimization"
+        ]
+      }
+    ],
+    "technical_skills": {
+      "languages": ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "MySQL", "PostgreSQL", "HTML/CSS"],
+      "frameworks": [
+        "React", "Node.js", "Next.js", "FastAPI", "Prisma", "SQLAlchemy", "Express", "MongoDB", "PyTorch", "TensorFlow"
+      ],
+      "tools": [
+        "Git", "GitHub", "VS Code", "PyCharm", "Eclipse", "Docker", "Dbeaver", "Postman", "Supabase", "AWS", "Figma"
+      ]
+    },
+    "coursework": [
+      "Object-Oriented Analysis and Design",
+      "Discrete Mathematics",
+      "Linear Algebra",
+      "Circuit Analysis",
+      "Design and Analysis of Algorithms",
+      "Database Systems",
+      "Statistical Methods for Engineers",
+      "UI/UX",
+      "Intro to Software Engineering",
+      "Systems Programming",
+      "Artificial Intelligence (in-progress)"
+    ]
+  }
+  
