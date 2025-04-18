@@ -54,12 +54,14 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-br from-purple-primary to-pink-accent p-1"
+            style={{ position: 'relative' }}
           >
             <div className="w-full h-full rounded-full overflow-hidden">
               <Image
-                src="/profile pic/profile.png"
+                src="/userfiles/profile.png"
                 alt="Sue Sue's profile picture"
                 fill
+                sizes="(max-width: 768px) 256px, 320px"
                 priority
                 className="object-cover"
               />

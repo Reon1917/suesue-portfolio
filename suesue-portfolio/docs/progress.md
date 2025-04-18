@@ -62,6 +62,13 @@
 7. ✅ Ensured proper contrast for all text elements in both modes
 8. ✅ Added group transitions for interactive elements
 
+## Bug Fixes
+1. ✅ Fixed profile picture path to correctly reference `/userfiles/profile.png`
+2. ✅ Added `sizes` attribute to image component for better performance
+3. ✅ Added explicit `position: relative` style to parent container for Next.js Image
+4. ✅ Removed reference to missing `/noise.png` texture in project cards
+5. ✅ Ensured all assets are properly referenced from the `/userfiles` directory
+
 ## Notes
 - The portfolio includes all requested sections with a modern, minimalist design
 - Fully responsive for mobile, tablet, and desktop
@@ -70,3 +77,4 @@
 - Resume download functionality with correct file path
 - Contact form with simulated submission (ready for Resend implementation)
 - Enhanced visual design with gradients and improved color scheme
+- Fixed all console errors and asset loading issues

@@ -64,7 +64,6 @@ export default function Projects() {
               className="bg-card rounded-lg overflow-hidden shadow-custom hover:shadow-lg transition-all duration-300 border border-border h-full flex flex-col group"
             >
               <div className={`h-48 bg-gradient-to-r ${project.color} flex items-center justify-center p-6 relative overflow-hidden transition-all duration-500 group-hover:h-52`}>
-                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10"></div>
                 <span className="text-2xl font-bold text-white relative z-10">{project.title.split(" ")[0]}</span>
               </div>
               
