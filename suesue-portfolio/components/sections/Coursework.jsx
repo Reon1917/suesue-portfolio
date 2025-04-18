@@ -29,7 +29,7 @@ export default function Coursework() {
           className="mb-12 text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Relevant <span className="text-purple-primary">Coursework</span>
+            Relevant <span className="bg-gradient-to-r from-purple-primary to-pink-accent bg-clip-text text-transparent">Coursework</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A selection of coursework that has shaped my technical knowledge and approach to solving problems.
@@ -44,10 +44,12 @@ export default function Coursework() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="bg-card p-5 rounded-lg shadow-sm border border-border hover:border-purple-primary hover:shadow-md transition-all duration-300 flex items-center"
+              className="bg-card p-5 rounded-lg shadow-custom border border-border hover:border-purple-primary/40 hover:shadow-lg transition-all duration-300 flex items-center group"
             >
-              <BookOpen className="h-5 w-5 mr-3 text-purple-primary flex-shrink-0" />
-              <span>{course}</span>
+              <div className="mr-3 w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-primary/10 to-pink-accent/10 group-hover:from-purple-primary/20 group-hover:to-pink-accent/20 transition-all duration-300">
+                <BookOpen className="h-4 w-4 text-purple-primary group-hover:text-pink-accent transition-all duration-300 flex-shrink-0" />
+              </div>
+              <span className="group-hover:bg-gradient-to-r group-hover:from-purple-primary group-hover:to-pink-accent group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">{course}</span>
             </motion.div>
           ))}
         </div>

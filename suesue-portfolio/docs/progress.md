@@ -8,9 +8,10 @@
 - ✅ Dark/light mode with theme switcher
 
 ## Color Palette
-- ✅ Primary: Ivory (light mode), AMOLED Black (dark mode)
-- ✅ Accent colors: #BF44CA, #9950A0, #E42AF5, #3C3B3B
-- ✅ Minimal use of accent colors to maintain clean aesthetic
+- ✅ Primary: Ivory/Light Background (light mode), Dark Background (dark mode)
+- ✅ Accent colors: #BF44CA, #9950A0, #E42AF5
+- ✅ Enhanced with gradient effects and improved color contrast
+- ✅ Added subtle background patterns and shadow effects
 
 ## Components Structure
 ```
@@ -51,11 +52,21 @@
 - ✅ Button (for CTA and resume download)
 - ✅ Badge (for skills)
 
+## Improvements Made
+1. ✅ Fixed resume download path to use `/userfiles/SueSue_Resume.pdf`
+2. ✅ Enhanced color scheme for both light and dark modes
+3. ✅ Fixed technical skills text visibility issues in light mode
+4. ✅ Added gradient effects for headings and UI elements
+5. ✅ Improved card styling with better shadows and hover effects
+6. ✅ Enhanced overall visual appeal with subtle animations
+7. ✅ Ensured proper contrast for all text elements in both modes
+8. ✅ Added group transitions for interactive elements
+
 ## Notes
 - The portfolio includes all requested sections with a modern, minimalist design
 - Fully responsive for mobile, tablet, and desktop
 - Dark/light mode toggle with theme persistence
 - Animations added using Framer Motion for a polished experience
-- Resume download functionality with placeholder PDF
+- Resume download functionality with correct file path
 - Contact form with simulated submission (ready for Resend implementation)
-- Consistent use of the specified color palette throughout the design
+- Enhanced visual design with gradients and improved color scheme

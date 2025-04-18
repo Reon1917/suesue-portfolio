@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
-import { Send } from "lucide-react";
+import { Send, CheckCircle2 } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -38,7 +38,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-muted/20">
+    <section id="contact" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export default function Contact() {
           className="mb-12 text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get In <span className="text-purple-primary">Touch</span>
+            Get In <span className="bg-gradient-to-r from-purple-primary to-pink-accent bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Have a question or want to work together? Feel free to reach out using the form below.
@@ -62,27 +62,28 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             onSubmit={handleSubmit}
-            className="bg-card p-8 rounded-lg shadow-sm border border-border"
+            className="bg-card p-8 rounded-lg shadow-custom border border-border relative overflow-hidden"
           >
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-primary/5 to-pink-accent/5 pointer-events-none"></div>
+            
             {submitted ? (
-              <div className="text-center py-8">
+              <div className="text-center py-8 relative z-10">
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.3 }}
-                  className="text-purple-primary mb-4 flex justify-center"
+                  className="mb-4 flex justify-center"
                 >
-                  <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-primary to-pink-accent flex items-center justify-center">
+                    <CheckCircle2 className="h-8 w-8 text-white" />
+                  </div>
                 </motion.div>
-                <h3 className="text-xl font-bold mb-2">Message Sent!</h3>
+                <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-purple-primary to-pink-accent bg-clip-text text-transparent">Message Sent!</h3>
                 <p className="text-muted-foreground">Thanks for reaching out. I'll get back to you soon.</p>
               </div>
             ) : (
               <>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 relative z-10">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Name
@@ -114,7 +115,7 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div className="mb-6">
+                <div className="mb-6 relative z-10">
                   <label htmlFor="subject" className="block text-sm font-medium mb-2">
                     Subject
                   </label>
@@ -129,7 +130,7 @@ export default function Contact() {
                   />
                 </div>
                 
-                <div className="mb-6">
+                <div className="mb-6 relative z-10">
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
                     Message
                   </label>
@@ -147,7 +148,7 @@ export default function Contact() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto group"
+                  className="w-full md:w-auto group bg-gradient-to-r from-purple-primary to-pink-accent hover:shadow-lg transition-all relative z-10"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center">

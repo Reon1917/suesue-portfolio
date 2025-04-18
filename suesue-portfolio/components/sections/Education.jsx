@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
+import { GraduationCap, MapPin, Calendar, Briefcase } from "lucide-react";
 
 const educationData = [
   {
@@ -69,7 +69,7 @@ const workExperienceData = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 bg-muted/20">
+    <section id="education" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ export default function Education() {
           className="mb-12 text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Education & <span className="text-purple-primary">Experience</span>
+            Education & <span className="bg-gradient-to-r from-purple-primary to-pink-accent bg-clip-text text-transparent">Experience</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             My academic background and professional experience have equipped me with the 
@@ -92,10 +92,10 @@ export default function Education() {
           <div>
             <h3 className="text-2xl font-bold mb-6 flex items-center">
               <GraduationCap className="mr-2 text-purple-primary" />
-              Education
+              <span className="bg-gradient-to-r from-purple-primary to-purple-secondary bg-clip-text text-transparent">Education</span>
             </h3>
             
-            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:w-[2px] before:bg-border before:h-full">
+            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:w-[2px] before:bg-gradient-to-b before:from-purple-primary before:to-pink-accent before:h-full">
               {educationData.map((edu, index) => (
                 <motion.div
                   key={index}
@@ -105,13 +105,13 @@ export default function Education() {
                   viewport={{ once: true }}
                   className="relative pl-10"
                 >
-                  <div className="absolute left-0 top-1 w-10 h-10 bg-purple-primary rounded-full flex items-center justify-center text-white">
+                  <div className="absolute left-0 top-1 w-10 h-10 bg-gradient-to-br from-purple-primary to-pink-accent rounded-full flex items-center justify-center text-white shadow-custom">
                     {index + 1}
                   </div>
                   
-                  <div className="bg-card p-5 rounded-lg shadow-sm border border-border">
+                  <div className="bg-card p-5 rounded-lg shadow-custom border border-border hover:border-purple-primary/40 transition-all duration-300">
                     <h4 className="text-lg font-bold">{edu.institution}</h4>
-                    <p className="text-purple-primary font-medium">{edu.degree}</p>
+                    <p className="bg-gradient-to-r from-purple-primary to-pink-accent bg-clip-text text-transparent font-medium">{edu.degree}</p>
                     
                     <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-muted-foreground">
                       <div className="flex items-center">
@@ -133,21 +133,8 @@ export default function Education() {
           {/* Work Experience */}
           <div>
             <h3 className="text-2xl font-bold mb-6 flex items-center">
-              <svg 
-                className="mr-2 text-purple-primary" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              >
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-              </svg>
-              Work Experience
+              <Briefcase className="mr-2 text-pink-accent" />
+              <span className="bg-gradient-to-r from-purple-secondary to-pink-accent bg-clip-text text-transparent">Work Experience</span>
             </h3>
             
             <div className="space-y-6">
@@ -158,10 +145,10 @@ export default function Education() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-card p-5 rounded-lg shadow-sm border border-border"
+                  className="bg-card p-5 rounded-lg shadow-custom border border-border hover:border-pink-accent/40 transition-all duration-300"
                 >
-                  <h4 className="text-lg font-bold">{work.title}</h4>
-                  <p className="text-purple-primary font-medium">
+                  <h4 className="text-lg font-bold hover:bg-gradient-to-r hover:from-purple-secondary hover:to-pink-accent hover:bg-clip-text hover:text-transparent transition-all duration-300">{work.title}</h4>
+                  <p className="bg-gradient-to-r from-purple-secondary to-pink-accent bg-clip-text text-transparent font-medium">
                     {work.organization || work.organizations?.join(", ")}
                   </p>
                   
@@ -179,7 +166,7 @@ export default function Education() {
                     </div>
                   </div>
                   
-                  <ul className="list-disc pl-5 text-sm space-y-1">
+                  <ul className="list-disc pl-5 text-sm space-y-1 text-foreground">
                     {work.responsibilities.map((resp, i) => (
                       <li key={i}>{resp}</li>
                     ))}
